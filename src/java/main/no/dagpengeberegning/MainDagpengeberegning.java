@@ -2,8 +2,8 @@ package no.dagpengeberegning;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.math.MathContext;
-import java.math.RoundingMode;
+import static java.math.MathContext.DECIMAL64;
+import static java.math.RoundingMode.CEILING;
 
 import no.dagpengeberegning.util.Konstanter;
 
@@ -68,8 +68,8 @@ public class MainDagpengeberegning {
     // Dette har den bi-effekten at dersom resultatet av divisjonen et nøyaktig heltall, så vil bruker få én krone
     // mer enn det personen egentlig har krav på. Bruker derfor BigDecimal til å gjøre divisjonen.
 
-    BigDecimal grunnlag = new BigDecimal(inntektSisteAAret).max(new BigDecimal(inntektSisteTreAArene).divide(BigDecimal.valueOf(3), MathContext.DECIMAL64));
-    BigDecimal sats = grunnlag.divide(BigDecimal.valueOf(Konstanter.ANTALL_DAGER_I_ETT_AAR), 0, RoundingMode.CEILING);
+    BigDecimal grunnlag = new BigDecimal(inntektSisteAAret).max(new BigDecimal(inntektSisteTreAArene).divide(BigDecimal.valueOf(3), DECIMAL64));
+    BigDecimal sats = grunnlag.divide(BigDecimal.valueOf(Konstanter.ANTALL_DAGER_I_ETT_AAR), 0, CEILING);
     return sats.toBigInteger().min(BigInteger.valueOf(Konstanter.HOYESTE_DAGPENGESATS));
   }
 
