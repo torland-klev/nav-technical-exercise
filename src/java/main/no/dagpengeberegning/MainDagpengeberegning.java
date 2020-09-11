@@ -58,8 +58,8 @@ public class MainDagpengeberegning {
    * Grunnlaget deles på definert antall dager i året for å finne dagpengesatsen.
    * Dagpengesatsen kan ikke være høyere enn 6G, altså 6 * grunnbeløp.
    *
-   * @param inntektSisteAAret
-   * @param inntektSisteTreAArene
+   * @param inntektSisteAAret Inntekt siste året
+   * @param inntektSisteTreAArene Sum av inntekt siste tre årene
    * @return Den laveste av (Grunnlag / antall dager i året) og 6 * grunnbeløp.
    */
   private static BigInteger beregnDagpengesats(BigInteger inntektSisteAAret, BigInteger inntektSisteTreAArene){
