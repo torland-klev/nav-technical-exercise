@@ -1,0 +1,31 @@
+.beregningContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.beregningContainer label {
+    font-weight: 600;
+}
+
+.beregningContainer input {
+    margin-bottom: 10px;
+}
+
+.beregningContainer button {
+    width: 100%;
+    padding: 5px;
+    font-size: large;
+    font-weight: 550;
+    border-radius: 5px;
+    align-self: center;
+    background-color: #0067C5;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.statusText {
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+.animatedGradient{
+    color: #fff;
+    background: linear-gradient(to right, grey 10%, #fff 50%, black 60%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: color-change 1.5s linear infinite;
+}
+
+
+@keyframes color-change {
+    to {
+		background-position: 200% center;
+	}
+  }
