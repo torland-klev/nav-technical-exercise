@@ -26,6 +26,13 @@
     font-size: 40px;
 }
 
+.header .textMobile {
+    color: #3E3832;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
 .body {
     background-color: #E9E7E7;
     display: flex;
@@ -63,6 +70,15 @@
     margin: 20px;
     padding: 5px;
     width: 50%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.contentboxMobile {
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    width: 90%;
     background-color: white;
     border-radius: 5px;
 }
