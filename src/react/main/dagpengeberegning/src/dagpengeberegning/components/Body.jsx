@@ -9,7 +9,8 @@ class Body extends Component{
     render(){
 
         const dagpengeLink = "https://www.nav.no/no/person/arbeid/dagpenger-ved-arbeidsloshet-og-permittering/dagpenger";
-
+        
+        // For å legge til flere elements i body, lag en ny ContentBox og legg childrens inn i den.
         return(
             <div className="shared body">
               <ContentBox style={{backgroundColor: "#FFE9CC", border: "2px solid #D87F0A"}}>
@@ -38,6 +39,7 @@ class Body extends Component{
                     grunnlaget er den høyeste av inntekten siste året, og gjennomsnittelig inntekt
                     siste tre årene. Grunnlaget vil så deles på antall arbeidsdager i ett år, som
                     NAV har definert til å være 260. Dette resultatet vil være dagpengesatsen din.
+                    Vær oppmerksom på at dagpengegrunnlaget kan ikke være høyere en 6G.
                 </div> 
                 
                 <DownwardButton style={{marginTop: "20px"}}>   

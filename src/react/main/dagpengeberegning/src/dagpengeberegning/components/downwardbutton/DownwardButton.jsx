@@ -26,6 +26,9 @@ class DownwardButton extends Component {
 
     render(){
         const buttonText = (this.state.visible) ? "\u1403" : "\u1401";
+        
+        // CSSTransitionGroup er litt utdatert, og burde byttes ut. 
+        // Funker for denne konseptuelle oppgaven; ikke bruk dette i produksjon.
         return(
             <div style={{paddingTop: "5px", display: "flex", alignItems:"center", flexDirection: "column"}}>
                 <CSSTransitionGroup 

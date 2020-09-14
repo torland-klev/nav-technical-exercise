@@ -9,6 +9,8 @@ class Dagpengeberegning extends Component {
         }
     }
     
+
+    // Regner ut dagpenger, basert på spesifikasjon beskrevet i Body.jsx
     handleClick = () => {
 
         const G = 101351;
